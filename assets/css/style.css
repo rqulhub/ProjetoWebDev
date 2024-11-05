@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Definições básicas */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c2c2c, #121212);
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; /* Necessário para posicionar o header corretamente */
+}
+  
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabeçalho */
+.header {
+    position: absolute; /* Fixa o cabeçalho no canto superior */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    display: flex; /* Flexbox para alinhar imagem e texto */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+.logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.project-title {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto (pode ser ajustado conforme necessário) */
+    margin: 0; /* Remover margens padrão */
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botão Adicionar Data */
+#add-date-btn {
+    background-color: #002d74;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+#add-date-btn:hover {
+    background-color: #0047b9;
+}
+
+/* Modal */
+#modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixo para cobrir toda a tela */
+    top: 50%; /* Posicionar no meio da tela verticalmente */
+    left: 50%; /* Posicionar no meio da tela horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar para centralizar o modal */
+    width: 15%; /* Largura do modal */
+    height: auto; /* Altura automática para conteúdo variável */
+    display: flex; /* Usar flexbox para centralização de conteúdo */
+    flex-direction: column; /* Coluna para o conteúdo do modal */
+    justify-content: center; /* Centralizar horizontalmente o conteúdo */
+    align-items: center; /* Centralizar verticalmente o conteúdo */
+    z-index: 1000; /* Acima de outros elementos */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.modal-content {
+    background-color: #000000b9; /* Fundo do conteúdo do modal */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.close:hover {
+    color: #fff;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+  
+button {
+    background-color: #002d74;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #0047b9;
+}
+  
+/* Itens da Agenda */
+.date-item {
+    background-color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.date-item p {
+    margin: 0;
+}
+  
+.date-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}

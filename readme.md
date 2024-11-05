@@ -1,0 +1,1 @@
+projeto pra faculdade 2.0, so aprendizado em HTML, CSS e javascript BÁSICO. Assim, podendo ter alguma noção e brincando com essas tecnologias. 

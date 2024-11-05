@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGENDA</title>
+  <link rel="icon" href="assets\images\cronos-cro-logo.png" type="assets\images\cronos-cro-logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header id="header">
+    <div class="header">
+      <img src="assets\images\cronos-cro-logo.png" alt="Logo da CronoCorp" class="logo">
+      <h1 class="project-title">CronoCorp: Web Design</h1>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <h1>Agenda de Cobrança de Aluguel 📅</h1>
+    <div id="agenda-container">
+      <!-- Aqui será exibida a lista de datas de cobrança -->
+    </div>
+
+    <!-- Botão para adicionar nova data -->
+    <button id="add-date-btn">Adicionar Data</button>
+
+    <!-- Modal para adicionar/editar datas -->
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar Data de Cobrança</h2>
+            <form id="date-form">
+              <label for="date">Data:</label>
+              <input type="date" id="date" required>
+              <label for="apartment">Apartamento:</label>
+              <input type="text" id="apartment" required>
+              <button type="submit">Salvar</button>
+            </form>
+        </div> 
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="footer"></footer>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
