@@ -1,4 +1,6 @@
+// garantia que código só rodará apos todos elementos estarem prontos
 document.addEventListener("DOMContentLoaded", () => {
+    // seleção de elementos do DOM
     const modal = document.getElementById("modal");
     const addDateBtn = document.getElementById("add-date-btn");
     const closeBtn = document.querySelector(".close");
